@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaragaGo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f00;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e65100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #bf360c;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ff6f00;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CaragaGo</h1>
+        <p>Your ultimate guide to the Caraga region</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#places">Places</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2 class="section-title">Welcome to CaragaGo</h2>
+            <p>Discover the beauty and culture of Caraga. From pristine beaches to cultural festivals, CaragaGo will guide your journey.</p>
+        </section>
+
+        <section id="places">
+            <h2 class="section-title">Top Places</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?beach,philippines" alt="Beach">
+                    <div class="card-content">
+                        <h3>Beautiful Beaches</h3>
+                        <p>Relax on the pristine white sands and clear waters of Caraga’s top beaches.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?waterfall,philippines" alt="Waterfall">
+                    <div class="card-content">
+                        <h3>Stunning Waterfalls</h3>
+                        <p>Explore breathtaking waterfalls hidden in Caraga’s lush landscapes.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x250/?festival,philippines" alt="Festival">
+                    <div class="card-content">
+                        <h3>Festivals & Culture</h3>
+                        <p>Join colorful festivals and immerse yourself in Caraga’s rich cultural heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2 class="section-title">Upcoming Events</h2>
+            <ul>
+                <li>Caraga Beach Festival – June 10, 2026</li>
+                <li>Surigao Diving Adventure – July 15, 2026</li>
+                <li>Agusan Heritage Celebration – August 5, 2026</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Email: info@caragago.com | Phone: 0912-345-6789</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 CaragaGo. All rights reserved.
+    </footer>
+</body>
+</html>
